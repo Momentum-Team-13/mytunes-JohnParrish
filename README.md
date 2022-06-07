@@ -17,7 +17,8 @@ Here are the steps you'll need to take in order to complete this project.
 
 still working on
 
-- The number of results you show is up to you. If no results are returned from a search, your UI should communicate this to the user in a clear way (how you do this is up to you).
+- _The number of results you show is up to you. If no results are returned from a search, your UI should communicate this to the user in a clear way (how you do this is up to you)._
+
 - Your application should be nicely styled, with thought given to the user experience (that is, it should be easy for your user to interact with).
 
 done

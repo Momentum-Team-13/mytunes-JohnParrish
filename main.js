@@ -33,7 +33,12 @@ function buildSongs(resultsArray) {
     for (let track of resultsArray) {
 
         let songs = document.createElement("div")
-        songs.classList.add("songs")
+        songs.classList.add("songprofile")
+
+        let imageElement = document.createElement("img")
+        imageElement.src = `${track.artworkUrl100}`
+        imageElement.alt = `song artwork`
+        songs.appendChild(imageElement)
 
         let bandElement = document.createElement("h3")
         bandElement.innerText = `${track.artistName}`
@@ -42,11 +47,6 @@ function buildSongs(resultsArray) {
         let nameElement = document.createElement("p")
         nameElement.innerText = `${track.trackName}`
         songs.appendChild(nameElement)
-
-        let imageElement = document.createElement("img")
-        imageElement.src = `${track.artworkUrl100}`
-        imageElement.alt = `song artwork`
-        songs.appendChild(imageElement)
 
         imageElement.addEventListener("click", (event) => {
             console.log("Play!")
