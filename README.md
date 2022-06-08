@@ -17,9 +17,7 @@ Here are the steps you'll need to take in order to complete this project.
 
 still working on
 
-- _The number of results you show is up to you. If no results are returned from a search, your UI should communicate this to the user in a clear way (how you do this is up to you)._
-
-- Your application should be nicely styled, with thought given to the user experience (that is, it should be easy for your user to interact with).
+- _Your application should be nicely styled, with thought given to the user experience (that is, it should be easy for your user to interact with)._
 
 done
 
@@ -29,6 +27,7 @@ done
 - You should handle responses from the server that are not in the 200 range in your javascript and also in your UI (for instance, you can show an error message and ask the user to repeat their search).
 - The results should include song details. You must include the song title, but the data you'll get back from the API has other info you can consider including, like artist name, album title, album image, and release date.
 - Validate the input so that a search request is not sent with no search term.
+- The number of results you show is up to you. If no results are returned from a search, your UI should communicate this to the user in a clear way (how you do this is up to you).
 
 ### Setup with `npm`
 

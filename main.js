@@ -3,6 +3,7 @@ console.log("connected")
 let search = document.querySelector(".search")
 let searchb = document.querySelector(".searchb")
 let results = document.querySelector(".songs")
+let text = document.querySelector(".text")
 
 
 searchb.addEventListener("click", (event) => {
@@ -10,7 +11,7 @@ searchb.addEventListener("click", (event) => {
     results.innerHTML = ""
     console.log(search.value)
     const input = search.value
-    let tuneurl = `https://itunes.apple.com/search?term=${input}&entity=song&limit=15`
+    let tuneurl = `https://itunes.apple.com/search?term=${input}&entity=song&limit=18`
 
     
     fetch(tuneurl, {
@@ -21,8 +22,14 @@ searchb.addEventListener("click", (event) => {
             return response.json()
         })
         .then(function (data) {
+            if (data.results.length === 0) {
+                console.log("no results")
+                text.innerText = `No results`
+            } else {
+                text.innerText = `Please click a picture to preview a song!`
             console.log(data.results[0])
             buildSongs(data.results)
+        }
         })
         .catch(err => {
             console.error(err)

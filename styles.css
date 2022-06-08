@@ -1,6 +1,18 @@
+body {
+    background-color: #fe2c54;
+}
+
 h1 {
     display: flex;
     justify-content: center;
+    color: white;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    color: white;
 }
 
 .music_bar {
@@ -15,15 +27,32 @@ form {
 }
 
 .songs {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(3, 300px);
-    /* border: 2px solid red; */
+    /* grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px); */
+    color: white;
+    /* border: 2px solid green; */
 }
 
 .songprofile {
     /* border: 2px solid blue; */
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 
+img:hover {
+    cursor: pointer;
+}
+
+audio {
+    /* border: 2px solid blue; */
+    width: 600px;
+    
 }
